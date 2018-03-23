@@ -2,6 +2,8 @@
     include("./../models/loginValidate.php");
 ?>
 
+<!-- builds the head of each page this should be the first thing included on most pages. -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

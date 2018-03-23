@@ -7,7 +7,7 @@
     }
 ?>
 
-
+<!-- form to enter info for a new contact -->
 
 <div class="newContact">
     <h2>Enter Contact Info</h3>

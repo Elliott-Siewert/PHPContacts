@@ -1,4 +1,5 @@
 <?php
+    //this script checkes to see if the user is currently looged in and if not redirects them to the login page.
     session_start();
     include("./../models/db.php");
     if(isset($_SESSION['access'])){
@@ -19,7 +20,6 @@
         }
     }
     
-
     $_SESSION['access'] = $access;
     $_SESSION['user'] = json_encode($user);
     if(!$access){

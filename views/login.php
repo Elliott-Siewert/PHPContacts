@@ -6,6 +6,8 @@
 	setcookie("PHPSESSID", "", time()-3600, "/");
 ?>
 
+<!-- form to login -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

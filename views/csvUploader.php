@@ -9,9 +9,11 @@
         header('Location: ./../views/adminUpload.php');
     }
 
+    //get file contects that user uploaded
     $fileContent = file_get_contents($_FILES['file']['tmp_name']);
     $fileContentArray = explode("\n", $fileContent);
 
+    //loop through each entry and save contacts
     foreach($fileContentArray as $row){
         if($row != ""){
             $rowContents = explode(",", $row);

@@ -1,5 +1,6 @@
 <?php
     // db vars
+    
     //local
     // $mysql_user = "root";
     // $mysql_pass = "";

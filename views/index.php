@@ -11,6 +11,7 @@
 <div class="title">
     <?php 
         if($user->admin == 1){
+            //if user is an admin create admin only links
             echo '<a href="adminUpload.php"><button>Upload CSV</button></a>';
             echo '<a href="adminDownload.php"><button>Download CSV</button></a>';
         }
@@ -19,6 +20,7 @@
     <a href="contact.php"><button>Add New Contact</button><a>
     <a href="sendEmail.php"><button>Email all contacts</button></a>
     <?php
+        //controls for filtering contats by birthday
         if($filterBirthDays == "true"){
             echo '<h3>Viewing contacts who have have a birthday this month</h3>';
             echo '<a href="index.php?filterBirthDays=false">View All Contacts<a>';
@@ -44,7 +46,7 @@
             <th>Birth Day</th>
         </tr>
         <?php
-        
+            // display either all contacts or filter by birthday,
             if($filterBirthDays == "true"){
                 foreach($contacts as $contact){
                     if(($contact->assignedRep == $user->userName) && (date("m", strtotime($contact->birthDay)) === date("m"))){

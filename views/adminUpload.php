@@ -2,7 +2,7 @@
     include("./../templates/siteHead.php");
     buildUserArray();
 ?>
-
+<!-- form to upload contacts to specific sales rep -->
 <div>
     <form method="post" action="csvUploader.php" enctype="multipart/form-data">
         <label for="user">Select sales rep to assign contacts to:</label>
